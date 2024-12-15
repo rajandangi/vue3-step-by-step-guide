@@ -28,4 +28,4 @@
 
 ## Installation 🛠
 -  `npm install` to install all the dependencies.
-- `npx json-server db.json -p 3001` to start the json server.
+- `npm run start` to start the json server.
