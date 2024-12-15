@@ -1,31 +1,35 @@
-## Points to remember 🧘
-- Parent Component can pass data to child component using props.Ex.
-    ```vue
-    <child-component :prop-name="data" /> // in parent component
-    ```
+# vue-project
 
-    ```vue
-    props: {
-        propName: {
-            type: String,
-        }
-    } // in child component
-    ```
+This template should help get you started developing with Vue 3 in Vite.
 
-- Child component can pass data to parent component using events. Ex.
-    ```vue
-    this.$emit('event-name', data) // in child component
-    ```
-    ```vue
-    <child-component @event-name="handlerMethod" /> // in parent component
-    ```
+## Recommended IDE Setup
 
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Resources  📚
-- [SON Server](https://www.npmjs.com/package/json-server/v/0.7.19)
-- [Vuejs Lifecycle Hooks](https://vuejs.org/guide/essentials/lifecycle.html#lifecycle-diagram)
+## Customize configuration
 
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Installation 🛠
--  `npm install` to install all the dependencies.
-- `npm run start` to start the json server.
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
