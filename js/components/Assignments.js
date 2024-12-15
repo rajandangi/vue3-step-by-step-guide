@@ -5,11 +5,12 @@ export default {
     components: { AssignmentList, AsssignmentCreate },
 
     template: `
-        <section class="space-y-6">
-            <assignment-list :assignments="filters.inProgress" title="In Progress"></assignment-list>
-            <assignment-list :assignments="filters.completed" title="Completed"></assignment-list>
+        <section class="space-y-6 flex gap-8">
+            <assignment-list :assignments="filters.inProgress" title="In Progress">
+                <asssignment-create @create-assignment="add"></asssignment-create>
+            </assignment-list>
 
-            <asssignment-create @create-assignment="add"></asssignment-create>
+            <assignment-list :assignments="filters.completed" title="Completed"></assignment-list>
         </section>
     `,
 
