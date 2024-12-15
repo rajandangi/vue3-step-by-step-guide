@@ -2,8 +2,8 @@ export default {
     template: `
             <form @submit.prevent="add">
                 <div class="border border-gray-600 text-black flex">
-                    <input type="text" placeholder="New Assignment" class="p-2 flex-auto" v-model="newAssignment" />
-                    <button type="submit" class="bg-white p-2 border-l flex-auto">Add</button>
+                    <input type="text" placeholder="New Assignment" class="p-2 w-40" v-model="newAssignment" />
+                    <button type="submit" class="bg-white p-2 border-l w-20">Add</button>
                 </div>
             </form>
     `,
