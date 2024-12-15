@@ -5,7 +5,7 @@ export default {
     components: { AssignmentList, AsssignmentCreate },
 
     template: `
-        <section class="flex gap-8">
+        <section class="flex gap-8 mb-4">
             <assignment-list :assignments="filters.inProgress" title="In Progress">
                 <asssignment-create @create-assignment="add"></asssignment-create>
             </assignment-list>
@@ -19,6 +19,8 @@ export default {
                 ></assignment-list>
             </div>
         </section>
+
+
     `,
 
     data() {
