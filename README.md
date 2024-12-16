@@ -33,3 +33,7 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+### References
+- Composition API: https://vuejs.org/guide/introduction.html#composition-api
