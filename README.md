@@ -38,3 +38,5 @@ npm run lint
 ### References
 - Composition API: https://vuejs.org/guide/introduction.html#composition-api
 - Provide/Inject: https://vuejs.org/guide/components/provide-inject#provide-inject
+- Store state in External file: https://vuejs.org/guide/scaling-up/state-management.html#state-management
+- Pinia (a state management library):https://vuejs.org/guide/scaling-up/state-management#pinia
