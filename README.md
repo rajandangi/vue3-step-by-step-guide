@@ -37,3 +37,4 @@ npm run lint
 
 ### References
 - Composition API: https://vuejs.org/guide/introduction.html#composition-api
+- Provide/Inject: https://vuejs.org/guide/components/provide-inject#provide-inject
