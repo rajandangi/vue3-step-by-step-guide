@@ -1,13 +1,13 @@
-<script>
-import flash from "@/mixins/flash";
+<script setup>
+import { useFlash } from "@/composables/useFlash";
 
-export default {
-  mixins: [flash],
-};
+let { flash } = useFlash();
 </script>
 
 <template>
   <div>
-    <button @click="flash('It works from the About Page')">Click me</button>
+    <button @click="flash('You did it', 'It works from the About Page', 'info')">
+      Click me
+    </button>
   </div>
 </template>
