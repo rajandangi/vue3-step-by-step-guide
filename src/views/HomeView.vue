@@ -1,14 +1,14 @@
 <script setup>
-import { useStorage } from "@/composables/useStorage";
+import { ref } from "vue";
+import TabbableTextarea from "@/components/TabbableTextarea.vue";
 
-let food = useStorage("food", "pizza");
+let comment = ref("text content");
 </script>
 
 <template>
   <main>
-    <p>
-      What's your favourite food?
-      <input type="text" v-model="food" />
-    </p>
+    <form>
+      <TabbableTextarea v-model="comment" style="width: 100%; height: 300px" />
+    </form>
   </main>
 </template>
